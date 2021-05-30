@@ -31,7 +31,7 @@ int main(int argc, char **argv)
     int dlinaMsg = strlen(buf);
     
     //Создание сокета
-    int mySocket = socket(AF_INET, SOCK_STREAM, 0);
+    int mySocket = socket(AF_INET, SOCK_STREAM, 0); //TCP
     if (mySocket == -1) {
         errHandler("Ошибка при создании сокета", 11);
     }
